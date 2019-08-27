@@ -25,15 +25,15 @@ This assignment is meant to challenge the potential applicant in the complete sp
 
 Please be aware of the fact that we are not only looking at the actual deliverables but also the process followed to achieve these results. *The presentation of the results is of equal importance to the actual results.*
 
-You will need to make a choise of delivering your solution in either **Amazon Web Services** or **Microsoft Azure**. We prefer the usage of native tools for IaC. Please use *CloudFormation (CFN)* or *Azure Resource Manager (ARM)* templates for this purpose and **not Terraform**. Of course, third party tools are always necessary in some cases. Please find suggested tools and guides in the [Links](#links) section that may help you in this journey.
+You will need to make a choice of delivering your solution in either **Amazon Web Services** or **Microsoft Azure**. We prefer the usage of native tools for IaC. Please use *CloudFormation (CFN)* or *Azure Resource Manager (ARM)* templates for this purpose and **not Terraform**. Of course, third party tools are always necessary in some cases. Please find suggested tools and guides in the [Links](#links) section that may help you in this journey.
 
 ## Assignment
 
 ### Part 1 - Transformation and Migration to the Public Cloud
 
-You have participated in a meeting with a client to assess their strategy to migrate to the public cloud. They are currently hosting 10 WordPress sites usign WordPress Multisite in a private datacenter. They achieve HA by using 2 servers and having two copies of their Multisite. For the database, they are using 2 MySQL servers behind and HAProxy to achieve HA.
+You have participated in a meeting with a client to assess their strategy to migrate to the public cloud. They are currently hosting 10 WordPress sites using WordPress Multisite in a private datacenter. They achieve high availability (HA) by using 2 servers and having two copies of their Multisite. For the database, they are using 2 MySQL servers behind and HAProxy to achieve HA.
 
-The past few months, they have been having a lot of issues because some of their websites has increased in popularity, especially during certain timeframes. For the future state, they have agreed that they want to move away from Multisite, and have independent Wordpress applications. They have also pointed out that they have 5 more sites in the making that will reach Production in the next 12 months.
+The past few months, they have been having a lot of issues because some of their websites have increased in popularity, especially during certain timeframes. For the future state, they have agreed that they want to move away from Multisite, and have independent Wordpress applications. They have also pointed out that they have 5 more sites in the making that will reach Production in the next 12 months.
 
 The client is only interested in developing the WordPress sites from an application perspective. They work using GIT repositories, and they have agreed to provide access to the application source code in one or more repositories.
 
@@ -55,10 +55,12 @@ Please provide the following:
 * For Part 1, an architectural design and IaC templates for deploying the components.
 * For Part 2, a complete architectural design of the CI/CD process.
 * Please include a simple time log of the activities you have performed.
-* A presentation of the results within slides, ready to be presented to our client.
+* Please document any assumptions and decisions you have made.
+* Please include a presentation of the results within slides, ready to be presented to our client.
 
 ## Links
 
+- [The Twelve Factors](https://12factor.net/)
 - [GitHub For Beginners: Don’t Get Scared, Get Started](https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/)
 - [Draw.io](https://www.draw.io/)
 - [AWS CloudFormation Documentation](https://docs.aws.amazon.com/cloudformation/index.html)
@@ -68,10 +70,8 @@ Please provide the following:
 - [Microsoft Azure Virtual Machine Scale Sets](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview?toc=%2Fazure%2Fvirtual-machines%2Flinux%2Ftoc.json)
 - [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)
 - [Microsoft Azure Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/)
-- [The Twelve Factors](https://12factor.net/)
 - [Containers](https://www.docker.com/resources/what-container)
-- [Kubernetes (K8s)](https://kubernetes.io/)
 
-## Lincense
+## License
 
 Copyright © 2019, [Sentia](https://sentia.com). All rights reserved.
