@@ -57,7 +57,7 @@ Please provide the following:
 
 ## Links
 
-- [The Twelve Factors](https://12factor.net/)
+- [The twelve-factor app](https://12factor.net/)
 - [Draw.io](https://www.draw.io/)
 - [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)
 - [Microsoft Azure Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/)
