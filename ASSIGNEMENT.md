@@ -30,7 +30,7 @@ You will need to make a choice of delivering your solution in either **Amazon We
 
 ### Transformation and Migration to the Public Cloud
 
-You have participated in a meeting with a client to assess their strategy to migrate to the public cloud. They are currently hosting a customer facing web application on their on premise emnvironment based on a NodeJS application behind an NGINX reverse proxy. They are ustilizing a MongoDB cluster for storing data as well as an FTP server for document storage. Finally, they are maintaining a cron server relevant to a small amount of jobs jobs that need to be executed a few times per day (no more than once per hour). All the above services are hosted on several virtual machines.
+You have participated in a meeting with a client to assess their strategy to migrate to the public cloud. They are currently hosting a customer facing web application on their on premise emnvironment based on a NodeJS application behind an NGINX reverse proxy. They are ustilizing a MongoDB cluster for storing data as well as an FTP server for document storage. They also maintain a cron server, mostly Bash and Python scripts, relevant to a small amount of jobs that need to be executed a few times per day (no more than once per hour). All the above services are hosted on several virtual machines.
 
 Finally, the customer currently has 3 environements, namely Test, Acceptance and Production.
 
