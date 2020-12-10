@@ -7,14 +7,13 @@
 
 Welcome to Sentia Recruitment
 
-The purpose of this repository is to provide an assignment that will highlight the strengths required by a cloud systems engineer in our public cloud consultancy workforce.
+The purpose of this repository is to provide an assignment that will highlight the strengths required by a cloud systems consultant in our public cloud consultancy workforce.
 
 ## Table of content
 
 - [General Information](#general-information)
 - [Assignment](#assignment)
-    - [Part 1 - Transformation and Migration to the Public Cloud](#part-1---transformation-and-migration-to-the-public-cloud)
-    - [Part 2 - CI/CD](#part-2---cicd)
+    - [Transformation and Migration to the Public Cloud](#transformation-and-migration-to-the-public-cloud)
 - [Deliverables](#deliverables)
 - [Links](#links)
 - [License](#license)
@@ -25,53 +24,44 @@ This assignment is meant to challenge the potential applicant in the complete sp
 
 Please be aware of the fact that we are not only looking at the actual deliverables but also the process followed to achieve these results. *The presentation of the results is of equal importance to the actual results.*
 
-You will need to make a choice of delivering your solution in either **Amazon Web Services** or **Microsoft Azure**. We prefer the usage of native tools for IaC. Please use *CloudFormation (CFN)* or *Azure Resource Manager (ARM)* templates for this purpose and **not Terraform**. Of course, third party tools are always necessary in some cases. Please find suggested tools and guides in the [Links](#links) section that may help you in this journey.
+You will need to make a choice of delivering your solution in either **Amazon Web Services** or **Microsoft Azure**.
 
 ## Assignment
 
-### Part 1 - Transformation and Migration to the Public Cloud
+### Transformation and Migration to the Public Cloud
 
-You have participated in a meeting with a client to assess their strategy to migrate to the public cloud. They are currently hosting 10 WordPress sites using WordPress Multisite in a private datacenter. They achieve high availability (HA) by using 2 servers and having two copies of their Multisite. For the database, they are using 2 MySQL servers behind and HAProxy to achieve HA.
+You have participated in a meeting with a client to assess their strategy to migrate to the public cloud. They are currently hosting a customer facing web application on their on premise emnvironment based on a NodeJS application behind an NGINX reverse proxy. They are ustilizing a MongoDB cluster for storing data as well as an FTP server for document storage. Finally, they are maintaining a cron server relevant to a small amount of jobs jobs that need to be executed a few times per day (no more than once per hour). All the above services are hosted on several virtual machines.
 
-The past few months, they have been having a lot of issues because some of their websites have increased in popularity, especially during certain timeframes. For the future state, they have agreed that they want to move away from Multisite, and have independent Wordpress applications. They have also pointed out that they have 5 more sites in the making that will reach Production in the next 12 months.
+Finally, the customer currently has 3 environements, namely Test, Acceptance and Production.
 
-The client is only interested in developing the WordPress sites from an application perspective. They work using GIT repositories, and they have agreed to provide access to the application source code in one or more repositories.
+The customer is interested in migrating the complete envitonment to the Public Cloud. They are not in a rush, and they have given an indication that they want to go live on the Public Cloud 12 months after they have agreed on the vendor to support them in this journey. They want to make sure that they have enough time to adjust the application to any technology related changes originating from an infrastructure perspective.
+
+There is a hard requirement for exporting all application and infrastructure logs to an ElasticSearch Cluster. The customer needs to have access to the Kibana dashboard within their headquarters but the cluster/dashboard *should not* be publically accessible.
 
 You have undertaken the task to design the future state of this environment in the public cloud. The solution needs to:
 * be scalable and flexible.
-* be futureproof and expandable with new WordPress sites with minimal effort.
+* utilize managed services as much as possible.
 
-We need to utilize to its full extend the ability of the cloud to scale, when necessary. We also need to version control our IaC templates and for this reason the environment should not be deployed manually within the console in terms of clicking around the different services.
-
-Please provide a design for the designated architecture *in either AWS or Azure*. For the same design, please provide CloudFormation or ARM templates, and everything else that you need to accompany your solution with based on your approach.
-
-### Part 2 - CI/CD
-
-Please provide a design for the CI/CD pipeline that you will use to deliver the changes to the environment, every time the client updates any of their WordPress applications in GIT. For this purpose, please treat the target architecture from [Part 1](#part-1---transformation-and-migration-to-the-public-cloud) as a black box.
+Cost optimization should be applied when necessarty, even if a few application related modifications are necessary. Environment isolation is important, but some shared services would be acceptable if they result in major cost reduction.
 
 ## Deliverables
 
 Please provide the following:
-* For Part 1, an architectural design and IaC templates for deploying the components.
-* For Part 2, a complete architectural design of the CI/CD process.
-* Please include a simple time log of the activities you have performed.
-* Please document any assumptions and decisions you have made.
-* Please include a presentation of the results within slides, ready to be presented to our client.
+1. An architectural design for all the components and all the environemnts.
+2. An IaC project for deploying an MVP demo (excluding the CRON and the ElasticSearch requirements).
+    * for AWS, write your IaC using: **AWS CDK**, or alternatively with AWS CloudFormation or Terraform.
+    * for Azure, write your IaC using: **ARM Templates**, or alternatively with Terraform.
+3. Include a simple time log of the activities you have performed.
+4. Document any assumptions and decisions you have made.
+5. A GIT repo with all the above.
 
 ## Links
 
 - [The Twelve Factors](https://12factor.net/)
-- [GitHub For Beginners: Don’t Get Scared, Get Started](https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/)
 - [Draw.io](https://www.draw.io/)
-- [AWS CloudFormation Documentation](https://docs.aws.amazon.com/cloudformation/index.html)
-- [Resource Manager on Azure documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/)
-- [AWS Cloud Development Kit (AWS CDK)](https://github.com/aws/aws-cdk)
-- [Amazon EC2 Auto Scaling](https://aws.amazon.com/ec2/autoscaling/?sc_channel=ba&sc_campaign=autoscaling-ec2-button&sc_medium=button&sc_country=global&sc_geo=global&sc_outcome=aware)
-- [Microsoft Azure Virtual Machine Scale Sets](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview?toc=%2Fazure%2Fvirtual-machines%2Flinux%2Ftoc.json)
 - [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)
 - [Microsoft Azure Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/)
-- [Containers](https://www.docker.com/resources/what-container)
 
 ## License
 
-Copyright © 2019, [Sentia](https://sentia.com). All rights reserved.
+Copyright © 2019-2021, [Sentia](https://sentia.com). All rights reserved.
