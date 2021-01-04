@@ -47,10 +47,11 @@ Cost optimization should be applied when necessarty, even if a few application r
 ## Deliverables
 
 Please provide the following:
-1. An architectural design for all the components and all the environemnts.
+1. An architectural design for all the components and all the environments.
 2. An IaC project for deploying an MVP demo (excluding the CRON and the ElasticSearch requirements).
     * for AWS, write your IaC using: **AWS CDK**, or alternatively with AWS CloudFormation or Terraform.
     * for Azure, write your IaC using: **ARM Templates**, or alternatively with Terraform.
+    * **Refrain from utilizing any SaaS offerings from 3rd parties (e.g. MongoDB Atlas).**
 3. Include a simple time log of the activities you have performed.
 4. Document any assumptions and decisions you have made.
 5. A GIT repo with all the above.
