@@ -39,8 +39,9 @@ The customer is interested in migrating the complete envitonment to the Public C
 There is a hard requirement for exporting all application and infrastructure logs to an ElasticSearch Cluster. The customer needs to have access to the Kibana dashboard within their headquarters but the cluster/dashboard *should not* be publically accessible.
 
 You have undertaken the task to design the future state of this environment in the public cloud. The solution needs to:
-* be scalable and flexible.
-* utilize managed services as much as possible.
+* (must) be scalable and flexible.
+* (must) utilize managed services as much as possible.
+* (nice to have) be modernized during this migration in terms of infrastucture technologies used.
 
 Cost optimization should be applied when necessarty, even if a few application related modifications are necessary. Environment isolation is important, but some shared services would be acceptable if they result in major cost reduction.
 
@@ -49,8 +50,8 @@ Cost optimization should be applied when necessarty, even if a few application r
 Please provide the following:
 1. An architectural design for all the components and all the environments.
 2. An IaC project for deploying an MVP demo (excluding the CRON and the ElasticSearch requirements).
-    * for AWS, write your IaC using: **AWS CDK**, or alternatively with AWS CloudFormation or Terraform.
-    * for Azure, write your IaC using: **ARM Templates**, or alternatively with Terraform.
+    * for AWS, write your IaC using: **AWS CDK** (preferred), or alternatively with AWS CloudFormation.
+    * for Azure, write your IaC using: **Bicep** (preferred), or alternatively with ARM Templates.
 3. Include a simple time log of the activities you have performed.
 4. Document any assumptions and decisions you have made.
 5. A GIT repo with all the above.
