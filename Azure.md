@@ -58,4 +58,4 @@ Please provide the following:
 
 ## License
 
-Copyright © 2019-2021, [Sentia](https://sentia.com). All rights reserved.
+Copyright © 2019-2022, [Sentia](https://sentia.com). All rights reserved.
