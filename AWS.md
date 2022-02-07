@@ -46,7 +46,7 @@ Any further assumptions that you need to make are welcome as long as they are do
 Please provide the following:
 1. An architectural design of the solution. Please use only the latest [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) and export the solution in PDF.
 2. A small presentation of no more than 10 slides, describing the solution and mapping the choices made to the various requirements, targeted towards the CTO of the customer.
-3. An IaC project/codebase using the AWS Cloud Development Kit (CDK), utilizing only L1 and L2 constructs, with all the configuration necessary for all environments (Test, Acceptance and Production), that deploys the following:
+3. An IaC project/codebase using the AWS Cloud Development Kit (CDK), utilizing only L1 and L2 constructs, with all the configuration necessary for all environments (Test, Acceptance and Production), that deploys the following per environment:
   * A top level stack with 2 nested stacks
     * The first nested stack should contain the VPC.
     * The second nested stack should contain the Database as it has been drawn in the architectural design. The Database should be deployed within the VPC in the first nested stack.
