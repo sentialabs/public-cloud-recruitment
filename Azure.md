@@ -9,7 +9,7 @@ Welcome to Sentia Recruitment
 
 The purpose of this repository is to provide an assignment that will highlight the strengths required by a cloud systems consultant in our public cloud consultancy workforce.
 
-## Table of content
+## Table of contents
 
 - [General Information](#general-information)
 - [Assignment](#assignment)
@@ -22,7 +22,7 @@ The purpose of this repository is to provide an assignment that will highlight t
 
 This assignment is meant to challenge the potential applicant in the complete spectrum of designing a solution and delivering an environment in the public cloud using Infrastructure as Code (IaC).
 
-Please be aware of the fact that we are not only looking at the actual deliverables but also the process followed to achieve these results. *The presentation of the results is of equal importance to the actual results.*
+Please be aware of the fact that we are not only looking at the actual deliverables but also the process followed to achieve these results. *The presentation of the results is of equal importance as the actual results.*
 
 ## Assignment
 

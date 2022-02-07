@@ -9,7 +9,7 @@ Welcome to Sentia Recruitment
 
 The purpose of this repository is to provide an assignment that will highlight the strengths required by a cloud systems consultant in our public cloud consultancy workforce.
 
-## Table of content
+## Table of contents
 
 - [General Information](#general-information)
 - [Assignment](#assignment)
@@ -22,7 +22,7 @@ The purpose of this repository is to provide an assignment that will highlight t
 
 This assignment is meant to challenge the potential applicant in the complete spectrum of designing a solution and delivering an environment in the public cloud using Infrastructure as Code (IaC).
 
-Please be aware of the fact that we are not only looking at the actual deliverables but also the process followed to achieve these results. *The presentation of the results is of equal importance to the actual results.*
+Please be aware of the fact that we are not only looking at the actual deliverables but also the process followed to achieve these results. *The presentation of the results is of equal importance as the actual results.*
 
 ## Assignment
 
@@ -35,7 +35,7 @@ Finally, the customer currently has 3 environments, namely Test, Acceptance and 
 The customer is interested in migrating the complete environment to the Public Cloud. They want to leverage within AWS the maximum potential availability from a design perspective and they want the proposed solution to reflect this. The region of choice is Frankfurt (eu-central-1). They have given an indication that they want to go live in AWS within 9 months. They are willing to make small modifications regards to how the application is deployed to the target infrastructure as long as the impact in terms of development technology is minimum and the benefits of the public cloud in terms of scalability substantial. They are not willing to change database technology as they have invested a lot of time in optimizing their MongoDB queries.
 
 You have undertaken the task to design the future state of this environment in the public cloud. The solution needs to:
-* be ha, scalable and flexible.
+* be highly available, scalable and flexible.
 * utilize only AWS Services and Products.
 * deployable completely using Infrastructure as Code (IaC) from a single codebase.
 
